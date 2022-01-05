@@ -5,10 +5,10 @@ I built an image editing software by using python-eel. User can edit photos easi
 Steps for how to use this software :
 
   Step 1 :
-	  Install pythen 'eel' in your terminal via "pip install eel".
+	  Install python 'eel' in your terminal via "pip install eel".
 
   Step 2 :
 	  Open Image_Editor.py file and run it.
 
   Step 3 :
-	  Edit your photoes & enjoy !
+	  Edit your photos & enjoy !
