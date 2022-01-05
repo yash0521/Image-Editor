@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="icon" href="LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+    <div class="editparts">
+        <table>
+            <tr>
+                <input type="file" id="imageLoader" name="imageLoader" value="upload picture">
+            </tr>
+            <tr>
+                <td>Brightness</td>
+                <td><input type="checkbox" id="bri_check"></td>
+                <td><input type="range" min="0" max="1" step="0.01" id="bright"></td>
+            </tr>
+            <tr>
+                <td>Grayscale</td>
+                <td><input type="checkbox" id="gre_check" /></td>
+                <td><input type="range" min="0" max="3" step="0.3" id="greyscale"></td>
+            </tr>
+            <tr>
+                <td>Contrast</td>
+                <td><input type="checkbox" id="cont_check" /></td>
+                <td><input type="range" min="0" max="500" step="1" id="contrast"></td>
+            </tr>
+            <tr>
+                <td>invert</td>
+                <td><input type="checkbox" id="invert" /></td>
+            </tr>
+            <tr>
+                <td>Black and White</td>
+                <td><input type="checkbox" id="bwhite"></td>
+            </tr>
+        </table>
+        <br><br>
+
+        
+        <button class="btn" style="width:100%"><a id="download" download="myImage.jpg" href="" onclick="download_img(this);" ><i class="fa fa-download"></i> Save </a></button>
+
+        <br><br>
+
+    </div>
+
+    <canvas id="canvas"></canvas>
+    
+    <script src="Script_Functions.js"></script>
+    
+
+</body>
+
+</html>
